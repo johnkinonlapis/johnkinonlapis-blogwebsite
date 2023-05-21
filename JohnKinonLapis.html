@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>
+
+            Sign In Account
+
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    </head>
+
+    <body>
+
+       
+
+        <div class="background"></div>
+
+        <div class="container">
+
+            <div class="content">
+
+                <h1 class="logo"><i class="fa-solid fa-camera"></i> Personal Blog</h1>
+
+                <div class="text-sci">  
+
+                    <h2>Welcome!<br><span>To My Website.</span></h2>
+
+                    <p>Im just creating this blog website for fun hehe.</p>
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="logreg-box">
+
+                <div class="form-box login">
+
+                    <form action="#">
+
+                        <h2>Sign In</h2>
+
+                        <div class="input-box">
+
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+
+                            <input type="text" required>
+
+                            <label>Email</label>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <input type="password" required id="myInput">
+
+                            <label>Password</label>
+
+                            <span class="eye" onclick="myFunction()">
+
+                                <i id="hide1" class="fa-solid fa-eye"></i>
+
+                                <i id="hide2" class="fa-solid fa-eye-slash"></i>
+
+                            </span>
+
+                        </div>
+
+                        <script>
+
+                            function myFunction(){
+
+                                var x = document.getElementById("myInput");
+
+                                var y = document.getElementById("hide1");
+
+                                var z = document.getElementById("hide2");
+
+                                if(x.type === 'password'){
+
+                                    x.type = "text";
+
+                                    y.style.display = "block";
+
+                                    z.style.display = "none";
+
+                                }
+
+                                else {
+
+                                    x.type = "password";
+
+                                    y.style.display = "none";
+
+                                    z.style.display = "block";
+
+                                }
+
+                            }
+
+                        </script>
+
+                        <div class="remember-forgot">
+
+                            <label><input type="checkbox">Remember me</label>
+
+                            <a href="#">Forgot password?</a>
+
+                        </div>
+
+                        <a href="home.html" target="_self"><button type="submit" class="btn">Sign In</a></button>
+
+                        <div class="login-register">
+
+                            <p>Don't have an account?
+
+                            <a href="#" class="register-link">Register</a></p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="form-box register">
+
+                    <form action="#">
+
+                        <h2>Sign Up</h2>
+
+                        <div class="input-box">
+
+                            <span class="icon"><i class="fa-solid fa-user"></i></span>
+
+                            <input type="text" required>
+
+                            <label>Name</label>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+
+                            <input type="text" required>
+
+                            <label>Email</label>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <input type="password" required id="MyInput">
+
+                            <label>Password</label>
+
+                            <span class="eye1" onclick="MyFunction()">
+
+                                <i id="hide3" class="fa-solid fa-eye"></i>
+
+                                <i id="hide4" class="fa-solid fa-eye-slash"></i>
+
+                            </span>
+
+                        </div>
+
+                         <script>
+
+                            function MyFunction(){
+
+                                var x = document.getElementById("MyInput");
+
+                                var y = document.getElementById("hide3");
+
+                                var z = document.getElementById("hide4");
+
+                                if(x.type === 'password'){
+
+                                    x.type = "text";
+
+                                    y.style.display = "block";
+
+                                    z.style.display = "none";
+
+                                }
+
+                                else {
+
+                                    x.type = "password";
+
+                                    y.style.display = "none";
+
+                                    z.style.display = "block";
+
+                                }
+
+                            }
+
+                        </script>
+
+                        <div class="remember-forgot">
+
+                            <p class="terms"></p><label><input type="checkbox">I agree to the terms & conditions</label></p>
+
+                        </div>
+
+                        <button type="submit" class="btn">Register</button>
+
+                        <div class="login-register">
+
+                            <p>Already have an account?
+
+                            <a href="#" class="login-link">Sign in</a></p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+       
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
